@@ -1,0 +1,27 @@
+{
+
+  "name": "workflow dev",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "Planifiez votre liste de taches par project et par url",
+
+  "browser_action": {
+    "default_icon": "icon/icon.png",
+    "default_popup": "popup.html",
+    "options_page" : "dashboard.html"
+  },
+
+  "options_page": "dashboard.html",
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "http://api.bac-a-sable.com/"
+  ],
+
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  }
+}

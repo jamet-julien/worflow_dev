@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset=utf-8>
+      <title></title>
+     <link rel="stylesheet" href="css/template.css">
+     <link rel="stylesheet" href="css/core.css">
+  </head>
+  <body>
+      <div id="wrapper" class="w--wrapper-dashboard">
+
+        <div id="tool" class="w--tool">
+
+          <div class="w--tool-space" id="tool-logged">
+            <span id="btn-unlogged" class="w--tool-btn">Deconnection</span>
+          </div>
+
+          <div class="w--tool-space" id="tool-unlogged">
+            <span id="btn-subscribe" class="w--tool-btn">inscription</span>
+          </div>
+
+           <div class="w--tool-space" id="tool-connect">
+            <span id="btn-logged" class="w--tool-btn">connection</span>
+          </div>
+
+        </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            .d8888. db    db d8888b. .d8888.  .o88b. d8888b. d888888b d8888b. d88888b
+            88'  YP 88    88 88  `8D 88'  YP d8P  Y8 88  `8D   `88'   88  `8D 88'
+            `8bo.   88    88 88oooY' `8bo.   8P      88oobY'    88    88oooY' 88ooooo
+              `Y8b. 88    88 88~~~b.   `Y8b. 8b      88`8b      88    88~~~b. 88~~~~~
+            db   8D 88b  d88 88   8D db   8D Y8b  d8 88 `88.   .88.   88   8D 88.
+            `8888Y' ~Y8888P' Y8888P' `8888Y'  `Y88P' 88   YD Y888888P Y8888P' Y88888P
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div id="subscribe" class="w--space user-action">
+
+
+          <h2 class="w--title">inscription</h2>
+
+
+          <div class="w--space-section">
+            <input type="text" id="sub-pseudo" name="pseudo" placeholder="pseudo" value=""/>
+          </div>
+
+          <div class="w--space-section">
+            <input type="text" id="sub-email" name="email" placeholder="email" value=""/>
+          </div>
+
+          <div class="w--space-section">
+            <input type="password" id="sub-password" name="password" placeholder="password" value=""/>
+          </div>
+
+          <div class="w--space-section">
+            <button>Subscribe</button>
+          </div>
+
+        </div>
+
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+             .o88b.  .d88b.  d8b   db d8b   db d88888b  .o88b. d888888b
+            d8P  Y8 .8P  Y8. 888o  88 888o  88 88'     d8P  Y8 `~~88~~'
+            8P      88    88 88V8o 88 88V8o 88 88ooooo 8P         88
+            8b      88    88 88 V8o88 88 V8o88 88~~~~~ 8b         88
+            Y8b  d8 `8b  d8' 88  V888 88  V888 88.     Y8b  d8    88
+             `Y88P'  `Y88P'  VP   V8P VP   V8P Y88888P  `Y88P'    YP
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <div id="connect" class="w--space user-action">
+
+           <h2 class="w--title">connection</h2>
+
+          <div class="w--space-section">
+            <input type="text" id="log-email" name="email" placeholder="email" value=""/>
+          </div>
+
+          <div class="w--space-section">
+            <input type="password" id="log-password" name="password" placeholder="password" value=""/>
+          </div>
+
+          <div class="w--space-section">
+            <button>Connect</button>
+          </div>
+
+        </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+            d8888b.  .d8b.   d888b  d88888b
+            88  `8D d8' `8b 88' Y8b 88'
+            88oodD' 88ooo88 88      88ooooo
+            88~~~   88~~~88 88  ooo 88~~~~~
+            88      88   88 88. ~8~ 88.
+            88      YP   YP  Y888P  Y88888P
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+        <div id="page" class="w--space view-list">
+
+            <!-- LIRE PAGE -->
+          <div id="project-lire" class="w--page">
+
+            <div class="project-list">
+              <div id="project-wrapper" class="w--list"></div>
+              <div class="w--space-section-form">
+                <input type="text" id="project-nom" name="nom" placeholder="nouveau project" value=""/>
+                <button>ajouter</button>
+              </div>
+            </div><div id="tache-wrapper" class="w--list tache-list"></div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+         d88b .d8888.               d888888b d88888b .88b  d88. d8888b. db       .d8b.  d888888b d88888b
+         `8P' 88'  YP               `~~88~~' 88'     88'YbdP`88 88  `8D 88      d8' `8b `~~88~~' 88'
+          88  `8bo.                    88    88ooooo 88  88  88 88oodD' 88      88ooo88    88    88ooooo
+          88    `Y8b. C8888D C8888D    88    88~~~~~ 88  88  88 88~~~   88      88~~~88    88    88~~~~~
+      db. 88  db   8D                  88    88.     88  88  88 88      88booo. 88   88    88    88.
+      Y8888P  `8888Y'                  YP    Y88888P YP  YP  YP 88      Y88888P YP   YP    YP    Y88888P
+         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      <script type="template" id="list-project">
+        <span class="w--list-item">
+          <span class="btn-show">[:NOM:]</span>
+          <span class="btn-sup">X<span>
+        </span>
+      </script>
+
+      <script type="template" id="info-page">
+        <span class="w--title">[:PROJECT.NOM:]</span>
+      </script>
+
+      <script type="template" id="list-tache">
+        <span class="w--list-item [:STATUS:]">
+          <span class="btn-show">[:NOM:]</span>
+          <span class="btn-sup">X<span>
+        </span>
+      </script>
+
+
+
+
+
+
+      <script src="js/conf.js"></script>
+
+      <script src="js/plugin/template.js"></script>
+      <script src="js/plugin/ajax.js"></script>
+      <script src="js/plugin/interface.js"></script>
+      <script src="js/plugin/storage.js"></script>
+
+      <script src="js/controler/dashboard.js"></script>
+      <script src="js/controler/project.js"></script>
+      <script src="js/controler/menu.js"></script>
+
+      <script src="js/dashboard.js"></script>
+  </body>
+</html>

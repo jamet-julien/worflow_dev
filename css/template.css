@@ -1,0 +1,223 @@
+
+html, body{
+  padding   : 0px;
+  margin    : 0px;
+  background: #DDD;
+  color     : #5D5D5D;
+  border    : none;
+  min-height: 400px;
+
+  font-family:Helvetica, Arial, sans-serif;
+}
+
+.js--template{
+  display:none;
+}
+
+.w--wrapper{
+  width         : 420px;
+  padding-bottom: 44px;
+}
+
+.w--wrapper-dashboard{
+  width         : 100%;
+  padding-bottom: 44px;
+}
+
+.w--tool, .w--space{
+    padding: 10px;
+}
+
+#btn-dashboard{
+  float: left;
+}
+
+input, input:focus{
+    outline         : none;
+    width           : 100%;
+    border          : none;
+    background-color: transparent;
+    padding         : 5px;
+    box-sizing      : border-box;
+    margin-bottom   : 8px;
+    color           : #333;
+    border-bottom   : #ccc 1px solid;
+}
+
+label{
+
+}
+
+button, button:focus{
+    outline            : none;
+    border             : none;
+    background         : #4788F2;
+    font-family        : Arial;
+    color              : #ffffff;
+    text-decoration    : none;
+    cursor             : pointer;
+    border-radius      : 50%;
+    width              : 60px;
+    height             : 60px;
+}
+/*****************************************
+d888888b  .d88b.   .d88b.  db
+`~~88~~' .8P  Y8. .8P  Y8. 88
+   88    88    88 88    88 88
+   88    88    88 88    88 88
+   88    `8b  d8' `8b  d8' 88booo.
+   YP     `Y88P'   `Y88P'  Y88888P
+ *****************************************/
+
+
+.w--tool{
+    padding-bottom  : 0px;
+    text-align      : right;
+    background-color: #F0F0F0;
+    height          : 77px;
+}
+
+  .w--tool-space{
+  }
+
+    .w--tool-btn{
+      cursor : pointer;
+    }
+
+/*****************************************
+.d8888. d8888b.  .d8b.   .o88b. d88888b
+88'  YP 88  `8D d8' `8b d8P  Y8 88'
+`8bo.   88oodD' 88ooo88 8P      88ooooo
+  `Y8b. 88~~~   88~~~88 8b      88~~~~~
+db   8D 88      88   88 Y8b  d8 88.
+`8888Y' 88      YP   YP  `Y88P' Y88888P
+ *****************************************/
+.w--space{
+  display         : none;
+  width           : 80%;
+  margin          : auto;
+  background-color: #FFF;
+  margin-top      : -30px;
+  padding         : 20px;
+  box-sizing      : border-box;
+  color           : #333;
+  text-align      : center;
+
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+}
+
+  .w--space.view-list{
+    padding:0px;
+  }
+
+  .w--wrapper-dashboard .w--space.user-action{
+    width          : 30%;
+    min-width      : 330px
+  }
+
+  .w--title{
+    font-size     : 24px;
+    color         : #4788F2;
+    text-transform: uppercase;
+    font-weight   : 100;
+  }
+
+  .w--space-section{
+    margin    : auto;
+    text-align: center;
+  }
+
+  .w--space-section-form{
+        margin: 0px;
+    text-align: left;
+
+  }
+
+      .w--space-section-form input{
+        width: 232px;
+      }
+
+      .project-list .w--space-section-form input{
+        width: 100%;
+      }
+
+      .project-list .w--space-section-form button{
+       margin:auto;
+       display: block;
+      }
+
+      .w--space-section-form button{
+            display: inline-block;
+
+      }
+
+.w--page{
+  display : none;
+}
+  .view-list .w--page{
+    display: table;
+    width: 100%;
+  }
+  .w--page input{
+
+  }
+
+  .w--page-info{
+    text-align: center;
+  }
+    .w--info-project{
+    }
+
+  .w--list{
+    padding: 17px 0px;
+  }
+
+  .project-list, .tache-list{
+    display: table-cell;
+    vertical-align: top;
+    box-sizing:border-box;
+    padding: 20px;
+  }
+
+    .project-list{
+    }
+
+    .tache-list{
+      width: 80%;
+      height: 100%;
+      border-left: 1px solid #E1E1E1;
+    }
+
+    .w--list-item{
+      cursor          : pointer;
+      padding         : 5px 5px;
+      display         : table;
+      background-color: rgb(255, 255, 255);
+      margin-bottom   : 2px;
+      text-align      : left;
+      color           : #696969;
+      border-bottom   : 1px #CCC solid;
+      border-left     : 1px solid #ccc;
+      width:100%;
+    }
+
+    .w--list-item span{
+      display: table-cell;
+    }
+      .btn-sup{
+        width:10px;
+      }
+
+
+    .w--list-item:hover, .w--list-item.current{
+      color       : #D9443B;
+      border-color: #D9443B;
+    }
+
+    .w--list-item.close{
+      color: rgb(178, 178, 178);
+      text-decoration: line-through;
+    }
